@@ -4,8 +4,8 @@ import React from "react";
 const List = (props) => {
   return (
     <div>
-      <li className="cursor-pointer rounded-tl-lg rounded-bl-lg p-4">
-        <div className="flex items-center space-x-4">
+      <li className="cursor-pointer rounded-lg p-4 hover:bg-gray-200">
+        <div className="flex items-center space-x-4 ">
           <div className="flex-shrink-0">
             <Image src={props.src} alt="/" className="h-8 w-8 rounded-full" />
           </div>

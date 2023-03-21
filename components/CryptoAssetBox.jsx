@@ -15,7 +15,7 @@ import avalancheImg from "public/assets/avalanche.png";
 
 const AssetBox = () => {
   return (
-    <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full mb-24 mt-8 rounded-md">
+    <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full mb-24 pt-40 rounded-md">
       <div className="grid grid-cols-12 rounded-lg bg-white shadow">
         <div className="col-span-0 sticky top-0 hidden h-screen overflow-auto md:col-span-4 md:block">
           <div className="p-6">
@@ -62,6 +62,14 @@ const AssetBox = () => {
             title="Bitcoin"
             price="$18,000"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            assetOne="BTC"
+            assetTwo="ETH"
+            assetThree="SOL"
+            assetValueOne="3000"
+            assetValueTwo="2000"
+            assetValueThree="1000"
+            assetFour="LTC"
+            assetValueFour="5000"
           />
           <Detail
             id="Ethereum"
@@ -69,6 +77,14 @@ const AssetBox = () => {
             title="Ethereum"
             price="$1,400"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            assetOne="BTC"
+            assetTwo="ETH"
+            assetThree="SOL"
+            assetValueOne="3000"
+            assetValueTwo="2000"
+            assetValueThree="1000"
+            assetFour="LTC"
+            assetValueFour="5000"
           />
           <Detail
             id="Tether"
@@ -76,6 +92,14 @@ const AssetBox = () => {
             title="Tether"
             price="$1"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            assetOne="BTC"
+            assetTwo="ETH"
+            assetThree="SOL"
+            assetValueOne="3000"
+            assetValueTwo="2000"
+            assetValueThree="1000"
+            assetFour="LTC"
+            assetValueFour="5000"
           />
           <Detail
             id="Binance-Coin"
@@ -83,6 +107,14 @@ const AssetBox = () => {
             title="Binance Coin"
             price="$285"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            assetOne="BTC"
+            assetTwo="ETH"
+            assetThree="SOL"
+            assetValueOne="3000"
+            assetValueTwo="2000"
+            assetValueThree="1000"
+            assetFour="LTC"
+            assetValueFour="5000"
           />
           <Detail
             id="XRP"
@@ -90,6 +122,14 @@ const AssetBox = () => {
             title="XRP"
             price="$0.37"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            assetOne="BTC"
+            assetTwo="ETH"
+            assetThree="SOL"
+            assetValueOne="3000"
+            assetValueTwo="2000"
+            assetValueThree="1000"
+            assetFour="LTC"
+            assetValueFour="5000"
           />
           <Detail
             id="Cardano"
@@ -97,6 +137,14 @@ const AssetBox = () => {
             title="Cardano"
             price="$0.32"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            assetOne="BTC"
+            assetTwo="ETH"
+            assetThree="SOL"
+            assetValueOne="3000"
+            assetValueTwo="2000"
+            assetValueThree="1000"
+            assetFour="LTC"
+            assetValueFour="5000"
           />
           <Detail
             id="Solana"
@@ -104,6 +152,14 @@ const AssetBox = () => {
             title="Solana"
             price="$101"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            assetOne="BTC"
+            assetTwo="ETH"
+            assetThree="SOL"
+            assetValueOne="3000"
+            assetValueTwo="2000"
+            assetValueThree="1000"
+            assetFour="LTC"
+            assetValueFour="5000"
           />
           <Detail
             id="Polkadot"
@@ -111,6 +167,14 @@ const AssetBox = () => {
             title="Polkadot"
             price="$5.10"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            assetOne="BTC"
+            assetTwo="ETH"
+            assetThree="SOL"
+            assetValueOne="3000"
+            assetValueTwo="2000"
+            assetValueThree="1000"
+            assetFour="LTC"
+            assetValueFour="5000"
           />
           <Detail
             id="Litecoin"
@@ -118,6 +182,14 @@ const AssetBox = () => {
             title="Litecoin"
             price="$84"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            assetOne="BTC"
+            assetTwo="ETH"
+            assetThree="SOL"
+            assetValueOne="3000"
+            assetValueTwo="2000"
+            assetValueThree="1000"
+            assetFour="LTC"
+            assetValueFour="5000"
           />
           <Detail
             id="Avalanche"
@@ -125,6 +197,14 @@ const AssetBox = () => {
             title="Avalanche"
             price="$15.4"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            assetOne="BTC"
+            assetTwo="ETH"
+            assetThree="SOL"
+            assetValueOne="3000"
+            assetValueTwo="2000"
+            assetValueThree="1000"
+            assetFour="LTC"
+            assetValueFour="5000"
           />
         </div>
       </div>

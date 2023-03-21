@@ -9,6 +9,7 @@ import solanaImg from "public/assets/solana.png";
 import { BiRefresh } from "react-icons/bi";
 import Link from "next/link";
 import Overview from "@/components/Overview";
+import Footer from "@/components/Footer";
 
 const Smallcase = () => {
   const [investment, setInvestment] = useState(false);
@@ -16,7 +17,7 @@ const Smallcase = () => {
   const renderInvestment = () => {
     if (investment) {
       return (
-        <div>
+        <div className="pt-20">
           <div className="p-4">
             <Overview value="-" inv="-" return="-" total="-" />
           </div>
@@ -50,7 +51,7 @@ const Smallcase = () => {
       );
     } else {
       return (
-        <div>
+        <div className="pt-20">
           <div className="p-4">
             <Overview value="-" inv="-" return="-" total="-" />
           </div>
@@ -61,9 +62,14 @@ const Smallcase = () => {
             <span className="justify-center m-1 text-gray-500 text-base">
               Pick up your first smallcase today and start tracking it here
             </span>
-            <Link href="/" target="_blank">
-              <button className="mr-[600px] ml-[600px] m-2   justify-start bg-green-500 hover:bg-green-700 text-white font-normal py-2 px-4 border border-green-700 rounded-md">
-                Start Investing Now
+            <Link href="/CryptoFi" target="_blank">
+              <button
+                type="button"
+                data-te-ripple-init
+                data-te-ripple-color="light"
+                className="scale-95 hover:scale-100 mb-1 justify-start bg-gradient-to-r from-[#01D28E] to-[#2192FF] hover:from-[#38A3A5] hover:to-[#22577A] text-white font-normal py-2 px-4 border border-green-700 rounded-md inline-block  bg-primary  pt-2.5 pb-2 text-xs  uppercase leading-normal shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+              >
+                Start Investing Today
               </button>
             </Link>
           </div>
@@ -75,8 +81,17 @@ const Smallcase = () => {
   return (
     <div className="p-15 pb-[110px] bg-gradient-to-r from-[#ECF9FF] to-[#FFF8EA]">
       <Header />
-      <Navbar />
+      <Navbar
+        one="Investments"
+        two=""
+        three=""
+        title="CryptoFi "
+        first="Home"
+        second="CryptoFi"
+        third="Investments"
+      />
       <div className="p-10 pb-[400px]">{renderInvestment()}</div>
+      <Footer />
     </div>
   );
 };

@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
-import AssetBox from "@/components/AssetBox";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Web3Modal from "web3modal";
 import { providers, Contract } from "ethers";
+import Image from "next/image";
+import cryptoImg from "/public/assets/crypto1.png";
 
 export default function Home() {
   const [walletConnected, setWalletConnected] = useState(false);
@@ -15,9 +16,9 @@ export default function Home() {
     const web3Provider = new providers.Web3Provider(provider);
 
     const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 5) {
-      window.alert("Change the network to Goerli");
-      throw new Error("Change network to Goerli");
+    if (chainId !== 80001) {
+      window.alert("Change the network to Mumbai");
+      throw new Error("Change network to Mumbai");
     }
 
     if (needSigner) {
@@ -39,20 +40,36 @@ export default function Home() {
   useEffect(() => {
     if (!walletConnected) {
       web3ModalRef.current = new Web3Modal({
-        network: "goerli",
+        network: "mumbai",
         providerOptions: {},
         disableInjectedProvider: false,
       });
       connectWallet();
     }
+    console.log(window.location.pathname);
   }, [walletConnected]);
 
   return (
     <>
-      <div className="p-15 bg-gradient-to-r from-[#ECF9FF] to-[#FFF8EA]">
+      <div className="p-15  bg-gradient-to-r from-[#ECF9FF] to-[#FFF8EA]">
         <Header />
-        <Navbar />
-        <AssetBox />
+        <Navbar one="CryptoFi" two="LendFi" three="AlgoFi" />
+        <div className="flex flex-row pt-40">
+          <div className="mr-20 mt-5 mb-20 ml-[100px]">
+            <Image src={cryptoImg} alt="/" height="1500" width="1500" />
+          </div>
+          <div className="p-10">
+            <div className="pt-[120px] px-20">
+              <span className="text-4xl text-start text-gray-500 ">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div></div>
         <Footer />
       </div>
     </>
