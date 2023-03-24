@@ -1,22 +1,22 @@
-import CryptoAssetBox from "@/components/CryptoAssetBox";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import React from "react";
+import CryptoAssetBox from "@/components/CryptoAssetBox";
 
-const CryptoFi = () => {
+const Users = () => {
   return (
     <>
       <div className="p-15 bg-gradient-to-r from-[#ECF9FF] to-[#FFF8EA]">
         <Header />
         <Navbar
-          one="Investments"
+          one="AlgoInvestments"
           two=""
           three=""
           title="CryptoFi"
           first="Home"
-          second="CryptoFi"
-          third=""
+          second="AlgoFi"
+          third="Users"
         />
         <CryptoAssetBox />
         <Footer />
@@ -25,4 +25,4 @@ const CryptoFi = () => {
   );
 };
 
-export default CryptoFi;
+export default Users;

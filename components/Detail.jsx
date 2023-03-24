@@ -1,36 +1,10 @@
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import PieChart from "./PieChart";
 import TableComponent from "./TableComponent";
+import Component from "./Component";
 
 const Detail = (props) => {
-  const component = () => {
-    // if (window.location.pathname == "/CryptoFi") {
-    return (
-      <div>
-        <PieChart
-          one={props.assetOne}
-          two={props.assetTwo}
-          three={props.assetThree}
-          four={props.assetFour}
-          valueOne={props.assetValueOne}
-          valueTwo={props.assetValueTwo}
-          valueThree={props.assetValueThree}
-          valueFour={props.assetValueFour}
-        />
-      </div>
-    );
-    // } else if (window.location.pathname == "/LendFi") {
-    //   return (
-    //     <div>
-    //       <TableComponent />
-    //     </div>
-    //   );
-    // }
-  };
-
-  // useEffect(() => component(), []);
-
   return (
     <div id={props.id} className="mb-12 border-b-2 border-b-gray-200">
       <div className="relative grid grid-cols-12 rounded-3xl lg:p-4">
@@ -80,7 +54,20 @@ const Detail = (props) => {
             </button>
           </div>
         </div>
-        <div>{component()}</div>
+        <div>
+          <div>
+            <Component
+              assetOne={props.assetOne}
+              assetTwo={props.assetTwo}
+              assetThree={props.assetThree}
+              assetFour={props.assetFour}
+              assetValueOne={props.assetValueOne}
+              assetValueTwo={props.assetValueTwo}
+              assetValueThree={props.assetValueThree}
+              assetValueFour={props.assetValueFour}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
