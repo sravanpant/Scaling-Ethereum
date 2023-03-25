@@ -1,4 +1,5 @@
 import { Footer } from "flowbite-react";
+import Link from "next/link";
 import React from "react";
 
 const footer = () => {
@@ -16,9 +17,11 @@ const footer = () => {
     >
       <div className="w-full text-center">
         <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
-          <span className="mx-[150px] self-center whitespace-nowrap text-4xl text-transparent bg-clip-text bg-gradient-to-r to-[#3C79F5] from-[#6C00FF] font-bold ">
-            OneFi
-          </span>
+          <Link href="/">
+            <span className="mx-[150px] self-center whitespace-nowrap text-4xl text-transparent bg-clip-text bg-gradient-to-r to-[#3C79F5] from-[#6C00FF] font-bold ">
+              OneFi
+            </span>
+          </Link>
           <Footer.LinkGroup className="mx-40">
             <Footer.Link className="text-base" href="/">
               Home
