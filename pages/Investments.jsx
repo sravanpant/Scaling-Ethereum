@@ -17,7 +17,7 @@ const Smallcase = () => {
   const renderInvestment = () => {
     if (investment) {
       return (
-        <div className="pt-20">
+        <div className="pt-[120px]">
           <div className="p-4">
             <Overview value="-" inv="-" return="-" total="-" />
           </div>
@@ -51,8 +51,8 @@ const Smallcase = () => {
       );
     } else {
       return (
-        <div className="pt-20">
-          <div className="p-4">
+        <div className="mt-[130px]">
+          <div className="px-4 pb-4 pt-1">
             <Overview value="-" inv="-" return="-" total="-" />
           </div>
           <div className="text-center  font-normal grid grid-rows-2">

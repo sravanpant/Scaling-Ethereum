@@ -5,7 +5,7 @@ import { BiRefresh } from "react-icons/bi";
 
 const Overview = (props) => {
   return (
-    <div className="flex justify-center m-4">
+    <div className="flex justify-center mx-[100px]">
       <div className="rounded-lg bg-neutral-100 p-6 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30">
         <div className="grid grid-cols-5">
           <div>
