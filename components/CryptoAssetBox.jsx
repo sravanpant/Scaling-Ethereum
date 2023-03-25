@@ -21,34 +21,34 @@ const AssetBox = () => {
           <div className="p-6">
             <div className="mt-6 mb-12 flow-root">
               <ul role="list" className="-my-5 divide-y divide-gray-200">
-                <Link href="/#Bitcoin">
+                <Link href="#Bitcoin">
                   <List src={btcImg} title="Bitcoin" price="$18,000" />
                 </Link>
-                <Link href="/#Ethereum">
+                <Link href="#Ethereum">
                   <List src={eth2Img} title="Ethereum" price="$1,400" />
                 </Link>
-                <Link href="/#Tether">
+                <Link href="#Tether">
                   <List src={tetherImg} title="Tether" price="$1" />
                 </Link>
-                <Link href="/#Binance-Coin">
+                <Link href="#Binance-Coin">
                   <List src={bnbImg} title="Binance Coin" price="$285" />
                 </Link>
-                <Link href="/#XRP">
+                <Link href="#XRP">
                   <List src={xrpImg} title="XRP" price="$0.37" />
                 </Link>
-                <Link href="/#Cardano">
+                <Link href="#Cardano">
                   <List src={cardanoImg} title="Cardano" price="$0.32" />
                 </Link>
-                <Link href="/#Solana">
+                <Link href="#Solana">
                   <List src={solanaImg} title="Solana" price="$101" />
                 </Link>
-                <Link href="/#Polkadot">
+                <Link href="#Polkadot">
                   <List src={polkadotImg} title="Polkadot" price="$5.10" />
                 </Link>
-                <Link href="/#Litecoin">
+                <Link href="#Litecoin">
                   <List src={ltcImg} title="Litecoin" price="$84" />
                 </Link>
-                <Link href="/#Avalanche">
+                <Link href="#Avalanche">
                   <List src={avalancheImg} title="Avalanche" price="$15.4" />
                 </Link>
               </ul>

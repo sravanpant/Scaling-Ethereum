@@ -2,45 +2,48 @@ import React from "react";
 
 const TableComponent = () => {
   return (
-    <div class="flex flex-col ml-[100px]">
-      <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-        <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-          <div class="overflow-hidden">
-            <table class="min-w-full text-left text-sm font-light">
-              <thead class="border-b font-medium dark:border-neutral-500">
-                <tr>
-                  <th scope="col" class="px-6 py-4">
-                    #
-                  </th>
-                  <th scope="col" class="px-6 py-4">
-                    Blockchain
-                  </th>
-                  <th scope="col" class="px-6 py-4">
-                    Price
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="border-b dark:border-neutral-500">
-                  <td class="whitespace-nowrap px-6 py-4 font-medium">1</td>
-                  <td class="whitespace-nowrap px-6 py-4">Polygon</td>
-                  <td class="whitespace-nowrap px-6 py-4">$1000</td>
-                </tr>
-                <tr class="border-b dark:border-neutral-500">
-                  <td class="whitespace-nowrap px-6 py-4 font-medium">2</td>
-                  <td class="whitespace-nowrap px-6 py-4">Aave</td>
-                  <td class="whitespace-nowrap px-6 py-4">$1003</td>
-                </tr>
-                <tr class="border-b dark:border-neutral-500">
-                  <td class="whitespace-nowrap px-6 py-4 font-medium">3</td>
-                  <td class="whitespace-nowrap px-6 py-4">Optimism</td>
-                  <td class="whitespace-nowrap px-6 py-4">$996</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg mx-20">
+      <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <tr>
+            <th scope="col" class="px-6 py-3">
+              Blockchain
+            </th>
+            <th scope="col" class="px-6 py-3">
+              Price
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+            >
+              Polygon
+            </th>
+            <td class="px-6 py-4">$1000</td>
+          </tr>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+            >
+              Aave
+            </th>
+            <td class="px-6 py-4">$1003</td>
+          </tr>
+          <tr class="bg-white dark:bg-gray-800">
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+            >
+              Optimism
+            </th>
+            <td class="px-6 py-4">$996</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };

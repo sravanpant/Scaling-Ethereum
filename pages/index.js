@@ -6,6 +6,9 @@ import Web3Modal from "web3modal";
 import { providers, Contract } from "ethers";
 import Image from "next/image";
 import cryptoImg from "/public/assets/crypto1.png";
+import Link from "next/link";
+import IndexCard from "@/components/IndexCard";
+import Carousal from "@/components/Carousal";
 
 export default function Home() {
   const [walletConnected, setWalletConnected] = useState(false);
@@ -60,15 +63,36 @@ export default function Home() {
           </div>
           <div className="p-10">
             <div className="pt-[120px] px-20">
-              <span className="text-4xl text-start text-gray-500 ">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </span>
+              <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+                  Lorem ipsum
+                </span>{" "}
+                Lorem ipsum.
+              </h1>
+              <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
             </div>
           </div>
         </div>
+        <div className="grid grid-cols-3 m-10">
+          <IndexCard
+            title="Lorem ipsum is placeholder text"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          />
+          <IndexCard
+            title="Lorem ipsum is placeholder text"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          />
+          <IndexCard
+            title="Lorem ipsum is placeholder text"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          />
+        </div>
+        {/* <div>
+          <Carousal />
+        </div> */}
         <div></div>
         <Footer />
       </div>

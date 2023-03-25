@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply selection:bg-fuchsia-300 selection:text-fuchsia-900;
+  }
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;

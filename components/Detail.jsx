@@ -21,9 +21,9 @@ const Detail = (props) => {
           </h2>
         </div>
       </div>
-      <div className="p-4">
+      <div className="p-4 m-4">
         <h3
-          className="mb-2 text-2xl font-medium text-gray-900"
+          className="mb-2 text-xl font-medium text-gray-900 uppercase"
           id="recent-hires-title"
         >
           About the Smallcase
@@ -34,7 +34,7 @@ const Detail = (props) => {
       </div>
       <div className="p-4 flex space-x-4 flex-row">
         <div className="mr-10 mt-10 p-5">
-          <h4 className="mb-2 text-xl font-medium text-black-500">
+          <h4 className="mb-2 text-lg uppercase font-medium text-black-500">
             Minimum Investment Amount
           </h4>
           <p className="mt-2 mb-2 text-2xl font-light text-gray-500">

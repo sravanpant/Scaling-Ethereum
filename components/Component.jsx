@@ -4,12 +4,7 @@ import TableComponent from "./TableComponent";
 import { useRouter } from "next/router";
 
 const Component = (props) => {
-  // const [domLoaded, setDomLoaded] = useState(false);
   const router = useRouter();
-
-  // useEffect(() => {
-  //   setDomLoaded(true);
-  // }, []);
 
   if (router.pathname == "/CryptoFi") {
     return (
