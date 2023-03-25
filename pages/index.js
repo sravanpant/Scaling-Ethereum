@@ -78,7 +78,7 @@ export default function Home() {
                 </span>{" "}
                 Lorem ipsum.
               </h1>
-              <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+              <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua
               </p>
