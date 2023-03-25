@@ -1,18 +1,16 @@
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import PieChart from "./PieChart";
-import TableComponent from "./TableComponent";
+import React from "react";
 import Component from "./Component";
 
 const Detail = (props) => {
   return (
-    <div id={props.id} className="mb-12 border-b-2 border-b-gray-200">
+    <div id={props.id} className="mb-12 border-b-2 border-b-gray-200 ">
       <div className="relative grid grid-cols-12 rounded-3xl lg:p-4">
         <div className="col-span-12 md:col-span-3 sm:ml-4">
           <Image
             src={props.src}
             alt="/"
-            className="h-[120px] w-[120px]  rounded-full"
+            className="h-[120px] w-[120px]  rounded-full scale-100 hover:scale-105 transition ease-in delay-10"
           />
         </div>
         <div className="col-span-12 md:col-span-9 ">

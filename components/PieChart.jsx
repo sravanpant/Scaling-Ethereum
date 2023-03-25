@@ -26,7 +26,7 @@ const PieChart = (props) => {
 
   return (
     <div>
-      <div className="justify-center">
+      <div className="justify-center scale-95 hover:scale-100 transition ease-in-out delay-10">
         <Pie data={data} options={options} height="400" width="400"></Pie>
       </div>
     </div>

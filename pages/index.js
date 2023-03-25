@@ -9,6 +9,8 @@ import cryptoImg from "/public/assets/crypto1.png";
 import Link from "next/link";
 import IndexCard from "@/components/IndexCard";
 import Carousal from "@/components/Carousal";
+import Accordian from "@/components/Accordian";
+import FlowCard from "@/components/FlowCard";
 
 export default function Home() {
   const [walletConnected, setWalletConnected] = useState(false);
@@ -54,9 +56,16 @@ export default function Home() {
 
   return (
     <>
-      <div className="p-15  bg-gradient-to-r from-[#ECF9FF] to-[#FFF8EA]">
+      <div className="p-15  bg-gradient-to-r from-[#ECF9FF] to-[#FFF8EA] ">
         <Header />
-        <Navbar one="CryptoFi" two="LendFi" three="AlgoFi" />
+        <Navbar
+          one="CryptoFi"
+          two="LendFi"
+          three="AlgoFi"
+          first="Home"
+          second=""
+          third=""
+        />
         <div className="flex flex-row pt-40">
           <div className="mr-20 mt-5 mb-20 ml-[100px]">
             <Image src={cryptoImg} alt="/" height="1500" width="1500" />
@@ -76,7 +85,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-3 m-10">
+        <div className="grid grid-cols-3 mx-40 my-20">
           <IndexCard
             title="Lorem ipsum is placeholder text"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -90,10 +99,9 @@ export default function Home() {
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
           />
         </div>
-        {/* <div>
-          <Carousal />
-        </div> */}
-        <div></div>
+        <Carousal />
+        <Accordian />
+        <FlowCard />
         <Footer />
       </div>
     </>

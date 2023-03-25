@@ -2,7 +2,7 @@ import React from "react";
 
 const TableComponent = () => {
   return (
-    <div class="relative overflow-x-auto shadow-md sm:rounded-lg mx-20">
+    <div class="scale-100 hover:scale-105 transition ease-in delay-10 cursor-pointer relative overflow-x-auto shadow-md sm:rounded-lg mx-20">
       <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr>

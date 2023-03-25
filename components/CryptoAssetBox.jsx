@@ -12,6 +12,7 @@ import solanaImg from "public/assets/solana.png";
 import polkadotImg from "public/assets/polkadot.svg";
 import ltcImg from "public/assets/ltc.png";
 import avalancheImg from "public/assets/avalanche.png";
+import IndexCard from "./IndexCard";
 
 const AssetBox = () => {
   return (
